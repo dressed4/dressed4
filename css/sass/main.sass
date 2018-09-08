@@ -1,0 +1,734 @@
+@import "../sass/_fonts.sass"
+@import "../sass/_globals.sass"
+@import "../sass/_animation.sass"
+
+
+body
+  background-color: #f2f2f2
+  font-family: "PT Sans Bold"
+  margin: 0
+  padding: 0
+  text-transform: uppercase
+
+.container
+  width: 1200px
+  margin: 0 auto
+  background-color: #ffffff
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2)
+
+  header
+    position: relative
+
+  .header-logo
+    position: absolute
+    top: 0
+    left: 50%
+    margin-left: -69px
+
+  .main-menu
+    padding: 0 6%
+    list-style: none
+    display: flex
+
+    li:first-of-type,
+    li:nth-of-type(2)
+      text-align: left
+
+    li:nth-of-type(3),
+    li:nth-of-type(4)
+      text-align: right
+
+    li
+      height: 55px
+      width: 25%
+
+      a
+        color: #000000
+        font-family: "PT Sans Bold"
+        font-size: 14px
+        line-height: 55px
+        text-transform: uppercase
+        text-decoration: none
+
+        &.active
+          color: #766357
+
+        &:hover,
+        &:focus
+          color: #81b3d2
+
+        &:active
+          color: #000000
+          opacity: 0.3
+
+
+  .jumbotron
+    height: 510px
+    background-image: url("/img/because-the-grand-canyon-sucks.png"), url("/img/sedona.png"), url("/img/background-shape.png"), url("/img/welcome.png"), url("/img/to-the-gorgeous.png"), url("/img/to-the-gorgeous-decoration.png"), url("/img/background-photo.png")
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat
+    background-position: 50% 350px, 50% 215px, bottom left, 50% 75px, 50% 132px, 50% 145px, 0 -80px
+
+  .about
+    text-align: center
+
+    p:first-of-type
+      width: 500px
+      font-size: 21px
+      line-height: 26px
+      text-transform: uppercase
+      margin: 60px auto 0px
+
+    p:last-of-type
+      font-family: "PT Sans"
+      width: 500px
+      font-size: 14px
+      line-height: 26px
+      text-transform: uppercase
+      margin: 30px auto 0px
+
+  .features
+    text-align: center
+    margin-top: 50px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 255px 330px 255px 255px
+
+    .feature-1,
+    .feature-7
+      background-color: #81b3d2
+      color: #ffffff
+      font-size: 21px
+      line-height: 21px
+
+      p:first-of-type
+        width: 160px
+        margin: 40px auto 0px
+        text-transform: uppercase
+
+      p:nth-of-type(2),
+      p:nth-of-type(3)
+        width: 320px
+        margin: 25px auto 0px
+        font-family: "PT Sans"
+        font-size: 14px
+        line-height: 21px
+        text-transform: uppercase
+
+    .feature-3,
+    .feature-4,
+    .feature-5
+
+      p:first-of-type
+        width: 165px
+        margin: 155px auto 0px
+        text-transform: uppercase
+        font-size: 21px
+
+      p:nth-of-type(2),
+      p:nth-of-type(3)
+        width: 290px
+        margin: 25px auto 0px
+        font-family: "PT Sans"
+        font-size: 14px
+        line-height: 21px
+        text-transform: uppercase
+
+    .feature-3
+      background-image: url("/img/icon-1.svg")
+      background-repeat: no-repeat
+      background-position: 50% 60px
+
+    .feature-4
+      background-image: url("/img/icon-3.svg")
+      background-repeat: no-repeat
+      background-position: 50% 60px
+
+    .feature-5
+      background-image: url("/img/icon-2.svg")
+      background-repeat: no-repeat
+      background-position: 50% 60px
+
+    .feature-8,
+    .feature-9,
+    .feature-10
+      background-color: #eeeeee
+      color: #000000
+      font-size: 21px
+      line-height: 21px
+
+      p:first-of-type
+        width: 150px
+        margin: 45px auto 0px
+        text-transform: uppercase
+
+      p:nth-of-type(2),
+      p:nth-of-type(3)
+        width: 270px
+        margin: 25px auto 0px
+        font-family: "PT Sans"
+        font-size: 14px
+        line-height: 21px
+        text-transform: uppercase
+
+    .feature-2
+      grid-column: 2 / 4
+      background-image: url("/img/layer-2.png")
+
+    .feature-6
+      grid-column: 1 / 3
+      background-image: url("/img/layer-6.png")
+
+  .are-you-interested
+    height: 240px
+    position: relative
+    background-color: white
+
+    p:first-of-type
+      text-transform: uppercase
+      font-size: 30px
+      line-height: 36px
+      margin: 51px auto 0px
+      text-align: center
+
+    p:last-of-type
+      width: 450px
+      text-transform: uppercase
+      font-size: 14px
+      font-family: "PT Sans"
+      line-height: 23px
+      margin: 26px auto 0px
+      text-align: center
+
+    .search-open-button
+      display: block
+      font-family: "PT Sans Bold"
+      text-align: center
+      height: 88px
+      font-size: 21px
+      text-transform: uppercase
+      line-height: 85px
+      background-color: #766357
+      color: #ffffff
+      width: 569px
+      margin: 45px auto 0px
+      border: none
+      cursor: pointer
+
+      &:hover,
+      &:focus
+        background-color: #604e43
+
+      &:active
+        background-color: #503e33
+        color: #847870
+
+    .search-form
+      position: absolute
+      width: 569px
+      height: 395px
+      background-color: white
+      top: 100%
+      left: 50%
+      margin-left: -285px
+      padding: 55px
+      box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+      z-index: 1
+
+      &.search-form-hide
+        animation: formhide 1s forwards
+
+      &.search-form-show
+        animation: formshow 1s forwards
+
+      .form-group
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: 38px 38px 38px
+        grid-row-gap: 30px
+        align-items: center
+
+        .form-input-item
+          grid-column: 2/5
+          position: relative
+
+          .calendar-btn
+            position: absolute
+            top: 5px
+            right: 5px
+            background-color: transparent
+            border: none
+            fill: #a9a9a9
+            cursor: pointer
+
+            &:hover,
+            &:focus
+              fill: black
+              outline: none
+
+            &:active
+              fill: #81b3d2
+
+        .form-input-item-2
+          display: flex
+
+          button
+            border: none
+            width: 38px
+            height: 38px
+            cursor: pointer
+            font-weight: 700
+            font-size: 20px
+            color: #a9a9a9
+            background-color: #f2f2f2
+            z-index: 1
+
+            &:hover,
+            &:focus
+              color: black
+              background-color: #ebebeb
+
+            &:active
+              color: #81b3d2
+              background-color: white
+
+          input
+            width: 38px
+
+        label[for="children"]
+          margin-left: 53px
+
+        input
+          font-family: "PT Sans"
+          font-weight: 700
+          height: 38px
+          background-color: #f2f2f2
+          border: none
+          padding: 13px
+          text-transform: uppercase
+          line-height: 26px
+          font-size: 14px
+          width: 100%
+
+          &:hover
+            background-color: #ebebeb
+
+          &:focus
+            background-color: white
+            border: 2px solid #e5e5e5
+
+
+      input[type="submit"]
+        text-transform: uppercase
+        font: inherit
+        width: 100%
+        border: none
+        background-color: #81b3d2
+        height: 58px
+        font-size: 21px
+        line-height: 26px
+        color: #ffffff
+        margin-top: 55px
+        cursor: pointer
+
+        &:hover,
+        &:focus
+          background-color: #669ec0
+
+        &:active
+          background-color: #5496bd
+          color: #84b3d0
+
+
+
+  .google-map
+    background-image: url("/img/map.png")
+    height: 470px
+
+footer
+      width: 1200px
+      background-color: white
+      height: 120px
+      bottom: 0px
+      display: flex
+      align-items: center
+      justify-content: space-around
+
+      .tag
+        font-size: 21px
+        line-height: 26px
+        text-transform: uppercase
+
+      .copyright
+        font-family: "PT Sans"
+        font-size: 14px
+        line-height: 26px
+        text-transform: uppercase
+        vertical-align: text-bottom
+        display: flex
+        align-items: center
+
+        svg
+          margin-left: 10px
+          margin-top: 10px
+
+          &:hover,
+          &:focus
+            fill: #81b3d2
+
+          &:active
+            fill: #bdbbbc
+
+      .socials
+        align-self: center
+        display: flex
+
+        li
+          margin-right: 5px
+
+        a
+          background-color: #81b3d2
+          width: 45px
+          height: 45px
+          display: flex
+
+          &:hover,
+          &:focus
+            background-color: #669ec0
+
+          &:active
+            background-color: #5496bd
+
+            svg
+              opacity: 0.3
+
+          svg
+            margin: auto
+
+
+
+.hotels-filter
+  display: flex
+  padding: 25px 75px 0px
+  background-image: url("/img/background-photo-filter.png")
+  background-repeat: no-repeat
+  background-position: 0 -280px
+  color: white
+
+.filter-group
+  display: flex
+  flex-direction: column
+  border: none
+  margin: 0
+  padding: 0
+  line-height: 21px
+  width: 250px
+
+  ul
+    margin: 0
+    padding: 0
+
+    li
+      margin-bottom: 30px
+
+  legend
+    padding: 0
+    font-size: 16px
+    margin-bottom: 25px
+
+  input
+    display: none
+
+  label
+    font-family: 'PT Sans'
+    position: relative
+    padding-left: 40px
+    cursor: pointer
+
+    &::before
+      content: ""
+      position: absolute
+      display: block
+      top: 0
+      left: 0
+      width: 23px
+      height: 23px
+      background: url(/img/checkbox-off.svg) no-repeat
+
+  input:checked ~ label::before
+    background: url(/img/checkbox-on.svg) no-repeat
+    width: 27px
+    height: 23px
+
+.day-price
+  width: 320px
+  margin-left: auto
+  margin-right: 0
+  border: none
+  padding: 0
+  display: flex
+
+.range
+  display: flex
+  border: 2px solid #ffffff
+  height: 35px
+  border-radius: 5px
+  margin-top: 10px
+  position: relative
+
+  &::after
+    content: ""
+    position: absolute
+    top: 5px
+    left: 50%
+    width: 2px
+    height: 22px
+    background-color: #ffffff
+
+.range-item
+  margin: auto
+  font-family: 'PT Sans'
+  margin-left: 60px
+
+  input
+    font: inherit
+    color: white
+    width: 50px
+    background: transparent
+    border: none
+
+.range-controls
+  margin-top: 20px
+  position: relative
+  margin-bottom: 32px
+
+.range-controls .scale
+  height: 2px
+  background: rgba(255, 255, 255, 0.3)
+
+.range-controls .bar
+  width: 80%
+  height: 2px
+  background: #ffffff
+
+.range-toggle
+  position: absolute
+  top: -9px
+  width: 4px
+  height: 4px
+  background: #ababab
+  border: 10px solid #ffffff
+  border-radius: 50%
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2)
+  cursor: pointer
+
+.range-toggle:hover
+  background: #1c4f80
+
+.range-toggle-min
+  left: 0
+
+.range-toggle-max
+  left: 80%
+
+.filter-submit
+  font: inherit
+  font-family: "PT Sans"
+  color: white
+  text-transform: uppercase
+  background-color: transparent
+  width: 133px
+  height: 36px
+  border: 2px solid #ffffff
+  margin: auto
+  cursor: pointer
+
+  &:hover,
+  &:focus
+    color: black
+    background-color: white
+
+
+.sort
+  padding: 30px 75px
+  display: flex
+  border-bottom: 1px solid #f2f2f2
+  align-items: baseline
+
+  p
+    margin: 0
+    padding: 0
+
+    &:first-child
+      margin-right: 50px
+      font-size: 21px
+
+    &:last-of-type
+      margin-right: 40px
+      font-size: 12px
+      font-family: "PT Sans"
+
+.sorting-menu
+  margin: 0
+  padding: 0
+  display: flex
+
+  li
+    color: #000000
+    opacity: 0.3
+    font-size: 12px
+    margin-right: 30px
+    font-family: "PT Sans"
+    border-bottom: 1px dotted #81b3d2
+    cursor: pointer
+
+    &:hover,
+    &:focus
+      color: #81b3d2
+      opacity: 1
+
+    &:active
+      color: #000000
+      opacity: 1
+      border: none
+
+    &.sorting-menu-active
+      color: #81b3d2
+      opacity: 1
+      border: none
+
+.sorting-arrows
+  margin: 0
+  padding: 0
+  display: flex
+  margin-left: auto
+
+  li
+    margin-left: 20px
+    cursor: pointer
+    fill: #cacaca
+    transform: scale(1.2)
+
+    &:focus,
+    &:hover
+      fill: black
+
+    &:active
+      fill: #81b3d2
+
+.hotels-list-item
+  margin: 0
+  padding: 0
+  display: flex
+  padding: 30px 75px
+  border-bottom: 1px solid #f2f2f2
+
+.hotels-list-item-image-preview
+  margin-right: 30px
+
+.hotels-list-item-info
+  display: flex
+  flex-direction: column
+
+.hotels-list-item-name
+  margin: 0
+  padding: 0
+  font-size: 21px
+  line-height: 15px
+  margin-bottom: 13px
+  color: black
+
+  &:focus,
+  &:hover
+    color: #81b3d2
+
+  &:active
+    color: #000000
+    opacity: 0.3
+
+.hotels-list-item-info-row
+  display: flex
+  font-family: "PT Sans"
+  font-size: 14px
+  line-height: 21px
+  margin-bottom: 14px
+
+.hotels-list-item-type
+  min-width: 115px
+  margin: 0
+  padding: 0
+
+.hotels-list-item-startprice
+  margin: 0
+  padding: 0
+
+.hotels-list-item-info-buttons
+  display: flex
+
+.hotels-list-item-info-button
+  display: block
+  text-transform: uppercase
+  font: inherit
+  width: 110px
+  border: none
+  background-color: #81b3d2
+  height: 27px
+  font-size: 14px
+  line-height: 27px
+  cursor: pointer
+  border: none
+  color: white
+  text-align: center
+  margin-right: 5px
+
+  &:hover,
+  &:focus
+    background-color: #669ec0
+
+  &:active
+    background-color: #5496bd
+    color: #84b3d0
+
+.hotels-list-item-book
+  width: 142px
+  background-color: #766357
+
+  &:hover,
+  &:focus
+    background-color: #604e43
+
+  &:active
+    background-color: #503e33
+    color: #847870
+
+.hotels-list-item-rating
+  display: flex
+  flex-direction: column
+  margin-left: auto
+  justify-content: space-between
+
+.hotels-list-item-rating-stars
+  display: flex
+  justify-content: flex-end
+
+  svg
+    margin-left: 5px
+    fill: #81B3D2
+    cursor: pointer
+
+    &:hover,
+    &:hover ~ svg
+      fill: black
+
+
+.hotels-list-item-rating-value
+  display: block
+  margin: 0
+  padding: 0
+  width: 110px
+  height: 27px
+  font-size: 14px
+  background-color: #f2f2f2
+  color: #666666
+  font-family: "PT Sans"
+  line-height: 27px
+  text-align: center
